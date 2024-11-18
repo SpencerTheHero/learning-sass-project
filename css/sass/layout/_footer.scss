@@ -1,0 +1,106 @@
+/* Start Footer*/
+.footer {
+    background-color: #e2e2e2;
+    margin-top: 50px;
+    padding-top: 30px;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery {
+        @media #{$minSmall} {
+            width: 100%;
+        }
+        @media #{$minMedium} {
+            width: 50%;
+        }
+        .image-box {
+            @media #{$minSmall} {
+                display: flex;
+                align-items: center;
+            }
+            margin-bottom: 15px;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            .text {
+                margin-right: 15px;
+                margin-left: 15px;
+                h4 {
+                    color: $redColor;
+                    margin: 10px 0 0;
+                }
+                p {
+                    color: #888;
+                    line-height: 1.7;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .info {
+        width: 100%;
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        ul {
+            color: #888;
+            line-height: 1.8;
+            span {
+                color: $redColor;
+            }
+        }
+        h4 {
+            color: #888;
+            margin-bottom: 0;
+        }
+        p {
+            color: #888;
+            margin-top: 5px;
+        }
+    }
+    .contact {
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        form {
+            width: 100%;
+            input, textarea{
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+                margin-bottom: 7px;
+                width: 100%;
+            }
+            textarea {
+                height: 140px;
+            }
+        }
+    }
+    .section-title {
+        color: #444;
+        font-weight: normal;
+    }
+    .copyright {
+        padding: 20px 0;
+        border-top: 1px solid #c5c5c5;
+        color: #888;
+        @media #{$minSmall} {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+    }
+}
+/* End Footer*/

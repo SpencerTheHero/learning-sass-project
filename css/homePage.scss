@@ -1,0 +1,29 @@
+
+//Imprt variabels
+@import './sass/helpers/variables';
+
+//Imprt mixins
+@import './sass/helpers/mixins';
+
+//Imprt grid
+@import './sass/layout/grid';
+
+//Imprt headings
+@import './sass/components/headings';
+
+
+//Imprt global
+@import './sass/pages/globalpage';
+
+
+//Imprt header
+@import './sass/layout/header';
+
+//Import page
+@import './sass/pages/homePage';
+
+//Import buttons
+@import './sass/components/buttons';
+
+//Imprt footer
+@import './sass/layout/footer';

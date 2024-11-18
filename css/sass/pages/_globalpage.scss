@@ -1,0 +1,23 @@
+/*Start Global*/
+* {
+    @include prefixer(box-sizing, border-box, webkit moz)
+}
+body {
+    background-color: #f6f6f6;
+    font: {
+        family: Tahoma;
+        size: 16px;
+    }
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/*End Global*/

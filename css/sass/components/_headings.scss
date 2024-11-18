@@ -1,0 +1,30 @@
+/*Start Headers-with-border*/
+
+.header-with-border {
+    position: relative;
+    h2 {
+        text-align: center;
+        background-color: $redColor;
+        color: #fff;
+        margin: 40px auto;
+        border-radius: 10px;
+        padding: 10px 15px;
+        width: 400px;
+        text-transform: uppercase;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 50%;
+            left: 0;
+            background-color: $grayColor;
+            z-index: -1;
+        }
+        @media #{$maxMobile} {
+            width: 300px;
+        }
+    }
+}
+
+/*End Headers-with-border*/

@@ -1,0 +1,41 @@
+// Overlay Mixins
+@mixin overlay($color, $opacity) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color, $opacity);
+}
+
+// prefixes Mixins
+@mixin prefixer($property, $value, $prefixes: ()) {
+
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+// animation Mixins
+@mixin keyF($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content
+    }
+    @keyframes #{$animation-name} {
+        @content
+    }
+};
+
+
+// To Mak Opacity Works In Explorer Browser Or Any Old Browser 
+// We Need Three Properties Zoom, Fillter, And Opacity
+@mixin opacity($value) {
+    zoom: 1;
+    $opacity-ie: $value * 100;
+    filter: alpha(opacity = $opacity-ie);
+    opacity: $value;
+}
